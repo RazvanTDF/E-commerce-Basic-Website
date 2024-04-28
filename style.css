@@ -45,8 +45,12 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 20px 80px;
-    background:#465b52;
+    background:#494949;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
 #navbar{
@@ -105,12 +109,12 @@ body{
     padding-bottom: 15px;
 }
 #hero h1{
-    color:#465b52;
+    color:#494949;
 }
 #hero button{
     background-image: url("img/button.png");
     background-color: transparent;
-    color:#465b52;
+    color:#494949;
     border: 0;
     padding: 14px 80px 14px 65px;
     background-repeat: no-repeat;
