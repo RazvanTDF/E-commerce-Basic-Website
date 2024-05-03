@@ -94,7 +94,7 @@ body{
 /*HOME PAGE*/
 
 #hero{
-    background-image: url("img/background.png");
+    background-image: url("img/maybe.jpeg");
     height: 90vh;
     width: 100%;
     background-size: cover; 
@@ -115,7 +115,7 @@ body{
 #hero button{
     background-image: url("img/button.png");
     background-color: transparent;
-    color:#494949;
+    color:rgb(47, 47, 47);
     border: 0;
     padding: 14px 80px 14px 65px;
     background-repeat: no-repeat;
@@ -173,6 +173,7 @@ body{
 
 #product1{
     text-align:center;
+    background-color: #f8f8f8;
 }
 
 #product1 .pro-container{
@@ -193,6 +194,7 @@ body{
     margin: 15px 0;
     transition: 0.2s ease;
     position: relative;
+    background-color: white;
 }
 #product1 .pro:hover{
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
