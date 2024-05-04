@@ -49,7 +49,17 @@ button.normal{
     border: none;
     outline: none;
     transition: 0.3 ease;
-
+}
+button.white{
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color:black;
+    background-color:transparent;
+    cursor: pointer;
+    border: 1px solid gray;
+    outline: none;
+    transition: 0.2 ease;
 }
 
 body{
@@ -287,3 +297,92 @@ body{
     background-color: gray;
     color:white;
 }
+#sm-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#sm-banner .banner-box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    background-image: url("img/banner/b2.png");
+    width: calc(50% - 20px); /* Lățimea fiecărui banner să fie jumătate din lățimea containerului, minus spațiul dintre ele */
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 20px; /* Spațiu între bannere */
+    padding: 30px;
+}
+
+#sm-banner .banner-box2{
+    background-image: url("img/banner/banner221.jpeg");
+
+}
+
+#sm-banner h4{
+    color:gray;
+    font-size: 20px;
+    font-weight: 300;
+}
+#sm-banner h2{
+    color: black;
+    font-size: 28px;
+    font-weight: 800;
+}
+#sm-banner span{
+    color: gray;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+#sm-banner .banner-box:hover button{
+    color:white;
+    background-color: gray;
+    border:1px solid gray;
+}
+
+#banner3{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 80px;
+}
+#banner3 .banner-box{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    background-image: url("img/banner/b3.jpeg");
+    min-width:  30%;  
+    height: 30vh;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 20px; /* Spațiu între bannere */
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#banner3 .banner-box2{
+    background-image: url("img/banner/banner4.jpeg");
+
+}
+#banner3 .banner-box3{
+    background-image: url("img/banner/banner5.webp");
+}
+
+#banner3 h2{
+    color:white;
+    font-weight: 900;
+    font-size:22px;
+}
+
+#banner3 h3{
+    color:#ec544e;
+    font-weight: 800;
+    font-size:15px;
+}
+/*1:30:30*/
