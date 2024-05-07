@@ -91,6 +91,10 @@ body{
     position: relative;
 }
 
+#mobile{
+    display:none;
+    align-items: center;
+}
 /*sterg linia de sub cuvintele din navbar*/
 
 #navbar li a{
@@ -343,46 +347,207 @@ body{
     background-color: gray;
     border:1px solid gray;
 }
+    #banner3{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0 80px;
+    }
+    #banner3 .banner-box{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        text-align: left;
+        background-image: url("img/banner/b3.jpeg");
+        min-width:  30%;  
+        height: 30vh;
+        background-position: center;
+        background-size: cover;
+        margin-bottom: 20px; /* Spațiu între bannere */
+        padding: 20px;
+        margin-bottom: 20px;
+    }
 
-#banner3{
+    #banner3 .banner-box2{
+        background-image: url("img/banner/banner4.jpeg");
+        position: relative;
+
+    }
+    #banner3 .banner-box3{
+        background-image: url("img/banner/banner5.webp");
+    }
+    #banner3 .banner-box2 h2{
+        position: absolute;
+        bottom: 0; /* Plasează textul în partea de jos a bannerului */
+        left: 50%; /* Mutați textul în centrul orizontal */
+        transform: translateX(-50%); /* Centrează textul în raport cu lățimea bannerului */
+        color: white;
+    }
+    #banner3 h2{
+        color:white;
+        font-weight: 900;
+        font-size:22px;
+    }
+
+#banner3 h3{
+        color:white;
+  font-weight: 800;
+  font-size:15px;
+    }
+#banner3 .banner-box3 {
+  position: relative; /* Setează poziționarea relativă pentru a controla poziționarea textului */
+   overflow: hidden; /* Ascunde orice conținut care depășește limitele containerului */
+}
+    
+#banner3 .banner-box3 h2 {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-weight: 900;
+    font-size: 22px;
+    width: 100%; /* Asigură că textul nu depășește lățimea containerului */
+    text-align: center; /* Aliniază textul la centru */
+}
+#newsletter {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 0 80px;
+    align-items: center; /* Modificare: aliniați elementele pe axa verticală */
+    align-self: center;
+    background-image: url("img/newsletter.jpg");
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #494949;
+    padding: 20px; /* Adăugare: adăugați un spațiu în jurul conținutului */
 }
-#banner3 .banner-box{
+    
+#newsletter h4 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 10px; /* Adăugare: adăugați un spațiu între titlu și formular */
+}
+    
+#newsletter p {
+    font-size: 14px;
+    font-weight: 600;
+    color: lightgray;
+    margin-bottom: 10px; /* Adăugare: adăugați un spațiu între paragraf și formular */
+}
+    
+#newsletter p span {
+    color: #f3b519;
+}
+    
+#newsletter .form {
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    width: 40%;
+}
+
+    #newsletter input {
+    height: 3.125rem;
+    padding: 0 1.25rem;
+    font-size: 14px;
+    width: 100%; 
+    border:1px solid transparent;
+    border-radius: 4px;
+    outline:none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+
+ }
+ 
+#newsletter button{
+    background-color: #088178;
+    color:white;
+    white-space: nowrap; 
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer .col{
+    display: flex;
     flex-direction: column;
-    text-align: left;
-    background-image: url("img/banner/b3.jpeg");
-    min-width:  30%;  
-    height: 30vh;
-    background-position: center;
-    background-size: cover;
-    margin-bottom: 20px; /* Spațiu între bannere */
-    padding: 20px;
+    align-items: flex-start;
     margin-bottom: 20px;
 }
-
-#banner3 .banner-box2{
-    background-image: url("img/banner/banner4.jpeg");
-
+footer .logo{
+    margin-top: 30px;
 }
-#banner3 .banner-box3{
-    background-image: url("img/banner/banner5.webp");
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+footer p{
+    font-size:13px;
+    margin: 0 0 8px 0;
+}
+footer a{
+    text-decoration: none;
+    color: #222;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+footer .follow{
+    margin-top: 20px;
+}
+footer .follow i{
+    color:#465b52;
+    padding-right: 4px;
+    cursor: pointer;
+}
+footer .install .row img{
+    border:1px solid #088178;
+    border-radius: 6px;
 }
 
-#banner3 h2{
-    color:white;
-    font-weight: 900;
-    font-size:22px;
+footer .install img{
+    margin: 10px 0 15px 0;
+}
+footer .follow i:hover{
+    color:#088178;
+}
+footer a:hover{
+    color:#088178;
+}
+footer .copyright{
+    width:100%;
+    text-align: center;
 }
 
-#banner3 h3{
-    color:#ec544e;
-    font-weight: 800;
-    font-size:15px;
+@media(max-width:799px){
+    #navbar{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position:fixed;
+    top:0;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: #494949;
+    box-shadow: 0 40px 60px rgba(0,0,0,0.3);
+    padding: 80px 0 0 10px;
+    }
+    #navbar li{
+        margin-bottom: 25px;
+    }
+    #mobile{
+        display:flex;
+        align-items: center;
+    }
+    #mobbile i{
+        font-size: 24px;
+        padding-left:20px;
+        color:#1a1a1a;
+    }
+    ai ramas la 2 ore
 }
-/*1:30:30*/
