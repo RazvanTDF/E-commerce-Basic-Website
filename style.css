@@ -679,6 +679,30 @@ footer .copyright{
     z-index: -9; /* Asigură că textul este plasat în spatele conținutului fiind cu minus */
 }
 
+/*ABOUT PAGE*/
+#page-header.about-header{
+    background-image: url("img/newsletter.jpg");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*RESPONSIVE*/ 
 @media(max-width:799px){
     .selection-m1{
