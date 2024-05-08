@@ -525,6 +525,45 @@ footer .copyright{
     text-align: center;
 }
 
+
+/*SHOP PAGE*/
+#page-header{
+    background-image: url("img/banner/page-header.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 14px;
+}
+#page-header h2,
+#page-header p{
+    color: white;;
+    font-weight: 700;
+}
+#pagination{
+    text-align: center;
+}
+#pagination a{
+    text-decoration: none;
+    background-color: #088178;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: white;
+    font-weight: 600;
+}
+
+#pagination a i{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+
+
 @media(max-width:799px){
     .selection-m1{
         padding :40px 40px
