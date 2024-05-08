@@ -95,6 +95,9 @@ body{
     display:none;
     align-items: center;
 }
+#close{
+    display:none;
+}
 /*sterg linia de sub cuvintele din navbar*/
 
 #navbar li a{
@@ -523,6 +526,9 @@ footer .copyright{
 }
 
 @media(max-width:799px){
+    .selection-m1{
+        padding :40px 40px
+    }
     #navbar{
     display:flex;
     flex-direction: column;
@@ -536,6 +542,10 @@ footer .copyright{
     background-color: #494949;
     box-shadow: 0 40px 60px rgba(0,0,0,0.3);
     padding: 80px 0 0 10px;
+    transition: 0.3s;
+    }
+    #navbar.active{
+        right:0;
     }
     #navbar li{
         margin-bottom: 25px;
@@ -544,10 +554,124 @@ footer .copyright{
         display:flex;
         align-items: center;
     }
-    #mobbile i{
+    #mobile i{
         font-size: 24px;
-        padding-left:20px;
+        padding-left: 20px;
         color:#1a1a1a;
     }
-    ai ramas la 2 ore
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left:30px;
+        color:#222;
+        font-size: 24px;
+    }
+    #lg-bag{
+        display:none;
+    }
+    #hero {
+        height:70vh;
+        padding: 0 80px;
+        background-position: top 30% right 30%;
+    }
+    #feature{
+        justify-content: center;
+    }
+    #feature .fe-box{
+        width: calc(100% / 3 - 30px); /* Calculează lățimea fiecărui fe-box pentru a acomoda trei pe fiecare rând, 30px fiind marginea totală pentru fiecare fe-box */
+        margin: 15px; /* Adaugă o margine între fiecare fe-box */
+        box-sizing: border-box; /* Asigură că padding-ul și border-ul sunt incluse în lățimea totală */
+    }
+    #product1 .pro-container {
+        justify-content: center; 
+    }
+    #product1 .pro{
+        margin: 15px;
+    }
+    #banner{
+        height: 20vh;
+    }
+    #banner h2{
+        font-size: 24px;
+    }
+    #sm-banner .banner-box{
+        min-width: 100%;
+        height: 32vh;
+    }
+    #banner3{
+        padding: 0 40px;
+    }
+    #banner3 .banner-box{
+        width: 28%;
+        height: 30vh;
+    }
+    #banner3 .banner-box2 h2{
+        font-size: 11px;
+    }
+    #newsletter .form{
+        width: 70%;
+    }   
+}
+@media(max-width:477px){
+    .section-p1{
+        padding: 20px;
+    }
+    #header{
+        padding:10px 30px
+    }
+    #hero{
+        padding: 0 20px;
+        background-position: 55%;
+    }
+    #hero p{
+    color: #fff;  
+    }
+    h2{
+        font-size: 32px;
+    }
+    h1{
+        font-size: 38px;
+    }
+    #feature{
+        justify-content: space-between;
+    } 
+    #feature .fe-box{
+        width: calc(100% / 2 - 30px);
+        margin:0 0 15px 0;
+    }
+    #product1 .pro{
+        width: 100%;
+    }
+    #banner{
+        height: 25vh;
+    }
+    #banner h2{
+        font-size: 12px;
+    }
+    #banner h4{
+        font-size: 22px;
+    }
+    #sm-banner .banner-box{
+        min-width: 100%;
+        height: 40vh;
+    }
+    #sm-banner .banner-box h2{
+        font-size: 15px;
+    }
+    #banner3{
+        padding: 0 20px;
+    }
+    #banner3 .banner-box{
+        width: 100%;
+    }
+    #newsletter{
+        padding: 40px 20px;
+    }
+    #newsletter .form{
+        width: 100%;
+    }
+    footer .copyright{
+        text-align: start;
+    }
 }
