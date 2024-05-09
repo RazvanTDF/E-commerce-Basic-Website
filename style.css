@@ -669,7 +669,7 @@ footer .copyright{
 #blog .blog-details a:hover::after{
     background-color: #088178;
 }
-#blog .blog-box h1{
+#blog div.blog-box h1 {
     position:absolute;
     top: -40px;
     left:0;
@@ -682,16 +682,50 @@ footer .copyright{
 /*ABOUT PAGE*/
 #page-header.about-header{
     background-image: url("img/newsletter.jpg");
+    background-size: cover; /* Asigură că imaginea se extinde pentru a acoperi întregul container */
+    background-position: center;
+    height: 200px; 
 }
 
 
+#about-head {
+    display: flex;
+    align-items: center;
+}
 
+#about-head img{
+    width: 50%;
+    height: auto;
+}
 
+#about-head div{
+    padding-left: 40px;
 
-
-
-
-
+}
+#about-app{
+    text-align: center;
+}
+#about-app .video{
+    display: flex;
+    width:70%;
+    height: 100%;
+    margin: 30px auto 0 auto;
+}
+#about-app .video video{
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+#about-app a{
+    color: #088178; /* Setează culoarea textului link-ului la hover */
+}
+#about-app a:hover{
+    color: #465b52; /* Setează culoarea textului link-ului la hover */
+}
+#about-app a:visited {
+    color: #088178; /* Setează culoarea textului link-ului vizitat */
+}
 
 
 
@@ -914,5 +948,20 @@ footer .copyright{
     #blog .blog-img {
         width: 50%;
         margin-right: 40px;
+    }
+    /*About page*/
+    #about-head{
+        flex-direction: column;
+    }
+    #about-head img{
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    #about-head div{
+        padding-left: 0;
+    }
+    #about-app .video{
+        width: 100%;
     }
 }
