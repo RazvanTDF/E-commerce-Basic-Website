@@ -1,58 +1,58 @@
-   const bar=document.getElementById('bar');
-   const close=document.getElementById('close');
-   const nav=document.getElementById('navbar');
+// Funcția pentru validarea formularului
+function validateForm() {
+    var name = document.getElementById("name");
+    var email = document.getElementById("email");
+    var subject = document.getElementById("subject");
+    var message = document.getElementById("message");
+    var isValid = true;
 
-   if(bar){
-       bar.addEventListener('click',()=>{
-           nav.classList.add('active');
-       });
-   }
-    if(close){
-         close.addEventListener('click',()=>{
-              nav.classList.remove('active');
-         });
+    // Validarea numelui, emailului, subiectului și mesajului aici...
+    var nameRegex = /^[A-Z][a-z]+\s[A-Z][a-z]+$/;
+    if (!nameRegex.test(name.value)) {
+        name.style.border = "2px solid red";
+        isValid = false;
+    } else {
+        name.style.border = "";
     }
-    function validateForm() {
-        var name = document.getElementById("name").value;
-        var email = document.getElementById("email").value;
-        var subject = document.getElementById("subject").value;
-        var message = document.getElementById("message").value;
-        var isValid = true;
-    
-        // Validare nume
-        var nameRegex = /^[A-Za-z\s]+$/; // Expresie regulată pentru a verifica numele format doar din litere și spații
-        if(!nameRegex.test(name) || name.length < 6 || name.length > 7 || /[^\w\s]/.test(name)) { // Verificăm și lungimea minimă și maximă a numelui, precum și prezența altor caractere speciale
-            alert("Please enter a valid name with exactly two words, each with 6 to 7 characters and containing only letters and spaces");
-            isValid = false;
-        }
-    
-        // Validare email
-        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Expresie regulată pentru validarea adresei de email
-        if(!emailRegex.test(email) || !email.includes('@')) {
-            alert("Please enter a valid email address");
-            isValid = false;
-        }
-    
-        // Validare subiect
-        if(subject.trim().length < 5) { // Adaugăm o validare pentru lungimea minimă a subiectului
-            alert("Please enter a subject with at least 5 characters");
-            isValid = false;
-        }
-    
-        // Validare mesaj
-        if(message.trim().length < 10) { // Adaugăm o validare pentru lungimea minimă a mesajului
-            alert("Please enter a message with at least 10 characters");
-            isValid = false;
-        }
-    
-        return isValid;
+
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email.value)) {
+        email.style.border = "2px solid red";
+        isValid = false;
+    } else {
+        email.style.border = "";
     }
-    // Path: contact.html
-    const form = document.getElementById('contact-form');
-    if(form) {
-        form.addEventListener('submit', (event) => {
-            if(!validateForm()) {
-                event.preventDefault();
+
+    if (subject.value.trim().length < 5) {
+        subject.style.border = "2px solid red";
+        isValid = false;
+    } else {
+        subject.style.border = "";
+    }
+
+    if (message.value.trim().length < 10) {
+        message.style.border = "2px solid red";
+        isValid = false;
+    } else {
+        message.style.border = "";
+    }
+
+    return isValid;
+}
+
+// Adăugăm un ascultător de eveniment pentru click-ul butonului de submit
+const submitButton = document.getElementById('submit-button');
+if (submitButton) {
+    submitButton.addEventListener('click', (event) => {
+        if (!validateForm()) {
+            event.preventDefault(); // Prevenim trimiterea formularului dacă nu este valid
+            window.alert('Formularul conține erori. Vă rugăm să verificați din nou datele introduse.'); // Afișăm un mesaj de alertă cu erorile de validare
+        } else {
+            // Afișăm un mesaj de confirmare simplu
+            var confirmation = window.confirm('Datele au fost completate corect. Confirmați trimiterea formularului?');
+            if (!confirmation) {
+                event.preventDefault(); // Prevenim trimiterea formularului dacă utilizatorul a anulat confirmarea
             }
-        });
-    }
+        }
+    });
+}

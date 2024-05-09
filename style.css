@@ -928,8 +928,14 @@ footer .copyright{
     border: 1px solid #e1e1e1;
     font-size: 13px;
 }
-
-
+/*error page*/
+/* Stil pentru chenarul roșu */
+.error-border {
+    border: 2px solid red;
+}
+.input-error {
+    border: 2px solid red;
+}
 
 
 /*RESPONSIVE*/ 
