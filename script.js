@@ -58,8 +58,6 @@ function validateForm() {
 
     return isValid;
 }
-
-// Adăugăm un ascultător de eveniment pentru click-ul butonului de submit
 const submitButton = document.getElementById('submit-button');
 if (submitButton) {
     submitButton.addEventListener('click', (event) => {
@@ -92,10 +90,4 @@ if (form) {
     });
     
 }
-//functie ca sa intru pe produsul din index.html
-const product1 = document.getElementById("produsul1");
-if (product1) {
-    product1.addEventListener("click", function() {
-        window.location.href = "sproduct.html";
-    });
-}
+
