@@ -1081,9 +1081,10 @@ footer .copyright{
     #banner h4{
         font-size: 22px;
     }
+    
     #sm-banner .banner-box{
         min-width: 100%;
-        height: 40vh;
+        height: 50vh;
     }
     #sm-banner .banner-box h2{
         font-size: 15px;
@@ -1094,6 +1095,7 @@ footer .copyright{
     #banner3 .banner-box{
         width: 100%;
     }
+    
     #newsletter{
         padding: 40px 20px;
     }
