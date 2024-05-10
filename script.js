@@ -1,8 +1,8 @@
-   const bar=document.getElementById('bar');
+ const bar=document.getElementById('bar');
    const close=document.getElementById('close');
    const nav=document.getElementById('navbar');
 
-   if(bar){
+     if(bar){
        bar.addEventListener('click',()=>{
            nav.classList.add('active');
        });
@@ -12,11 +12,6 @@
               nav.classList.remove('active');
          });
     }
-//functie ca sa intru pe produsul din index.html
-document.getElementById("produsul1").addEventListener("click", function() {
-    window.location.href = "sproduct.html";
-    });
-
 // Funcția pentru validarea formularului
 function validateForm() {
     var name = document.getElementById("name");
@@ -90,4 +85,3 @@ if (form) {
     });
     
 }
-
