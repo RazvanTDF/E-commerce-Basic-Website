@@ -13,40 +13,44 @@
          });
     }
 // Funcția pentru validarea formularului
+// Funcția pentru validarea formularului
 function validateForm() {
     var name = document.getElementById("name");
     var email = document.getElementById("email");
     var subject = document.getElementById("subject");
     var message = document.getElementById("message");
     var isValid = true;
-
-    // Validarea numelui, emailului, subiectului și mesajului aici...
+    // Validarea numelui
     var nameRegex = /^[A-Z][a-z]+\s[A-Z][a-z]+$/;
     if (!nameRegex.test(name.value)) {
         name.style.border = "2px solid red";
         isValid = false;
+        window.alert('Numele trebuie să conțină două cuvinte cu prima literă mare pentru fiecare, separate de un spațiu.');
     } else {
         name.style.border = "";
     }
-
+    // Validarea emailului
     var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email.value)) {
         email.style.border = "2px solid red";
         isValid = false;
+        window.alert('Adresa de email trebuie să fie într-un format valid (exemplu: nume@exemplu.com).');
     } else {
         email.style.border = "";
     }
-
+    // Validarea subiectului
     if (subject.value.trim().length < 5) {
         subject.style.border = "2px solid red";
         isValid = false;
+        window.alert('Subiectul trebuie să conțină cel puțin 5 caractere.');
     } else {
         subject.style.border = "";
     }
-
+    // Validarea mesajului
     if (message.value.trim().length < 10) {
         message.style.border = "2px solid red";
         isValid = false;
+        window.alert('Mesajul trebuie să conțină cel puțin 10 caractere.');
     } else {
         message.style.border = "";
     }
