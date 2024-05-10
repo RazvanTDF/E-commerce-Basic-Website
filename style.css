@@ -105,6 +105,10 @@ body{
     color: #fff; /* Culoare text pentru modul dark */
     /* Alte stiluri specifice pentru elementul cu id-ul "product1" în modul dark */
 }
+.dark-mode #product1{
+    background-color: #444;
+    color: #fff;
+}
 #mobile{
     display:none;
     align-items: center;
