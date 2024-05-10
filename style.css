@@ -1033,6 +1033,14 @@ footer .copyright{
     #form-details form{
         width: 50%;
     }
+    #prodetails .single-pro-image,
+#prodetails .small-img-group {
+    margin: 0 auto; 
+}
+#prodetails .single-pro-image{
+    width: 45%;
+    margin:auto;
+}
 }
 @media(max-width:477px){
     .section-p1{
@@ -1107,6 +1115,10 @@ footer .copyright{
     #prodetails .single-pro-details{
         width: 100%;
     }
+    #prodetails .single-pro-image,
+#prodetails .small-img-group {
+    margin: 0 auto; 
+}
     #blog {
         padding: 150px 150px 0 150px;
     }
