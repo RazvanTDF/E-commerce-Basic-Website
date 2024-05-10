@@ -89,6 +89,11 @@ body{
     list-style: none;
     padding: 0 20px;
     position: relative;
+}t1 .pro {
+    background-color: #484848; /* Fundal negru */
+    color: white; /* Text light gray */
+    border: 1px solid #555; /* Bordura gri mai inchis */
+    box-shadow: 20px 20px 30px rgba(255, 255, 255, 0.02); /* Umbra cu contrast invers */
 }
 .dark-mode {
     background-color: #222;
@@ -103,6 +108,7 @@ body{
 .dark-mode #product1 {
     background-color: #444; /* Culoare de fundal pentru modul dark */
     color: #fff; /* Culoare text pentru modul dark */
+    /* Alte stiluri specifice pentru elementul cu id-ul "product1" în modul dark */
 }
 .dark-mode #product1{
     background-color: #444;
