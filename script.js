@@ -13,8 +13,8 @@
          });
     }
 //functie ca sa intru pe produsul din index.html
-    document.getElementById("produsul1").addEventListener("click", function() {
-        window.location.href = "sproduct.html";
+document.getElementById("produsul1").addEventListener("click", function() {
+    window.location.href = "sproduct.html";
     });
 
 // Funcția pentru validarea formularului
