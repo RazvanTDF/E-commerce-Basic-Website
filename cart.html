@@ -51,14 +51,14 @@
                     <td><a href="#"><i class="far fa-times-circle"></i></a></td>
                     <td><img src="img/products/produsul1.jpg" alt=""></td>
                     <td>Mansory Venatus</td>
-                    <td>$23.599</td>
-                    <td><input type="number" value="1"></td>
-                    <td>$23.599</td>
-
+                    <td id="price">$ 23.599</td> <!-- Modifică aici prețul -->
+                    <td><input type="number" id="quantity" value="1"></td> <!-- Modifică aici câmpul de introducere a cantității -->
+                    <td id="cart-subtotal">$ 23.599</td> <!-- Modifică aici subtotalul -->
+                </tr>
             </tbody>
         </table>
     </section>
-
+    
     <section id="cart-add" class="section-p1">
         <div id="coupon">
             <h3>Apple Coupon</h3>
@@ -67,13 +67,13 @@
                 <button class="normal">Apply</button>
             </div>
         </div>
-
+    
         <div id="subtotal">
             <h3>Cart Totals</h3>
             <table>
                 <tr>
                     <td>Cart Subtotal</td>
-                    <td>$ 23.599</td>
+                    <td id="cart-subtotal">$ 23.599</td> <!-- Modifică aici subtotalul -->
                 </tr>
                 <tr>
                     <td>Shipping</td>
@@ -81,7 +81,7 @@
                 </tr>
                 <tr>
                     <td><strong>Total</strong></td>
-                    <td><strong>$ 23.599</strong></td>
+                    <td id="cart-total"><strong>$ 23.599</strong></td> <!-- Modifică aici totalul -->
                 </tr>
             </table>
             <button class="normal">Proceed to checkout</button>
