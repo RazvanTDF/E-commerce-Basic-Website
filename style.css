@@ -103,7 +103,6 @@ body{
 .dark-mode #product1 {
     background-color: #444; /* Culoare de fundal pentru modul dark */
     color: #fff; /* Culoare text pentru modul dark */
-    /* Alte stiluri specifice pentru elementul cu id-ul "product1" în modul dark */
 }
 .dark-mode #product1{
     background-color: #444;
