@@ -90,7 +90,21 @@ body{
     padding: 0 20px;
     position: relative;
 }
-
+.dark-mode {
+    background-color: #222;
+    color: #fff;
+    /* Alte stiluri pentru modul dark */
+}
+.dark-mode #feature {
+    background-color: #333; /* culoare fundal dark gri */
+    color: #fff; /* culoare text */
+    /* Alte stiluri specifice pentru elementul cu id-ul "feature" în modul dark */
+}
+.dark-mode #product1 {
+    background-color: #444; /* Culoare de fundal pentru modul dark */
+    color: #fff; /* Culoare text pentru modul dark */
+    /* Alte stiluri specifice pentru elementul cu id-ul "product1" în modul dark */
+}
 #mobile{
     display:none;
     align-items: center;

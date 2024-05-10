@@ -85,3 +85,7 @@ if (form) {
     });
     
 }
+document.getElementById("toggle-dark-mode").addEventListener("click", function() {
+    var body = document.body;
+    body.classList.toggle('dark-mode');
+});
