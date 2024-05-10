@@ -109,6 +109,14 @@ body{
     background-color: #444;
     color: #fff;
 }
+.dark-mode #product1 .pro {
+    background-color: #484848; /* Fundal negru */
+    color: white; /* Text light gray */
+    border: 1px solid #555; /* Bordura gri mai inchis */
+    box-shadow: 20px 20px 30px rgba(255, 255, 255, 0.02); /* Umbra cu contrast invers */
+}
+.dark-mode #product1 .pro .des span {
+    color: #ccc; /* Culoare text light gray */}
 #mobile{
     display:none;
     align-items: center;
